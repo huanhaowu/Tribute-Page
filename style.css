@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+:root{
+    --var-acent: #FCA311;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 80%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.container p{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.container ul{
+    display: flex;
+    list-style: none;
+    display: flex;
+}
+
+.container ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+.container ul li a:hover{
+    color: var(--var-acent);
+}
+
+header, .hero{
+    background-image: url(./resource/HeroImageBLACK.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 110dvh;
+    width: 100%;
+    position: relative;
+}
+
+.hero-title{
+    position: absolute;
+    top: 140px;
+    margin-left: 120px;
+}
+
+.hero-title h1{
+    color: var(--var-acent);
+    font-weight: 600;
+    font-size: 6.5rem;
+}
+
+.hero-title p{
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.section{
+    margin: 50px 120px 0 120px;
+    height: 100dvh;
+    /* border: 1px solid red; */
+}
+
+#latest-header{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 60px;
+    height: 60px;
+    border: 5px solid var(--var-acent);
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--var-acent);
+    transition: all 0.1s linear;
+    outline: 3px solid var(--var-acent);
+}
+
+.btn:nth-child(2){
+    margin-right: 70px;
+}
+
+.fa-solid{
+    color: var(--var-acent);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.fa-solid:hover{
+    color: white;
+}
+
+#latest-title{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #23262B;
+    margin-left: 60px;
+}
+
+.selected{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 75vh;
+    width: 90%;
+    border-radius: 20px; 
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+
+/* 
+.selected:hover{
+    border: 10px solid red;
+} */
+
+.hovered{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 250px 300px 40px 50px;
+}
+
+.hovered h3{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.hovered p{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.closed{
+    display: none;
+}
+
+#About{
+    display: flex;
+}
+
+#About .image{
+    background-image: url(./resource/bjarkePortrait.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 45%;
+    height: 85%;
+    position: relative;
+    margin: 50px 150px 0 70px;
+    border-radius: 15px;
+}
+
+#About .image h2{
+    position: absolute;
+    top: -60px;
+    left: 55px;
+    font-size: 5rem;
+    font-weight: semi-bold;
+    text-transform: uppercase;
+}
+
+.info{
+    width: 80%;
+    height: 100vh;
+    margin: 50px 0 0 0;
+}
+
+.image h2{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #23262B;
+}
+
+.info p{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#Projects h2{
+    font-size: 4rem;
+    font-weight: 400;
+    color: #23262B;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.cards-container{
+    margin: 0 12.5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    gap: 30px;
+}
+
+/* .card-test{
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.25);
+} */
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card-img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-info{
+    padding: 40px;
+}
+
+.card-info h5{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-info p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.card-info button{
+    border: none;
+    background-color: transparent;
+}
+
+.card-info button a{
+    text-decoration: none;
+    color: var(--var-acent);
+    font-weight: bold;
+}
+
+.card-info button a i{
+    margin-left: 5px;
+}
+
+.section.last{
+    height: 60vh;
+}
+
+.footer{
+    background-color: #646669;
+    margin-top: 50px;
+    height: 75dvh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ContactMe{
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    width: 90%;
+    overflow-x: hidden;
+    margin: 20px 120px 30px 120px;
+}
+
+.ContactMe h3{
+    margin-top: 30px;
+    color: #FBFCFE;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.inputs{
+    margin: 20px 80px 0 300px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inputs button {
+    align-self: flex-end;
+}
+
+.form-btn{
+    border: none;
+    cursor: pointer;
+    background-color: var(--var-acent);
+    height: 2.5rem;
+    width: 15rem;
+    border-radius: 60px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+}
+
+.form-btn:is(:hover, :focus){
+    transition: all 0.1s linear;
+    outline-offset: 3px;
+    outline: 3px solid var(--var-acent);
+}
+
+.inputs input{
+    border: none;
+    border-left: 4px solid var(--var-acent);
+    background-color: #7E7E7E;
+    height: 2.5rem;
+    padding: 10px;
+    color: #DFE3EB;
+    display: flex;
+    flex: 2;
+}
+
+.inputs button:focus{
+    outline: none;
+}
+
+.inputs input::placeholder{
+    color: #DFE3EB;
+    opacity: 0.5;
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.socials{
+    position: absolute;
+    left: 140px;
+    top: 400px;
+    color: white;
+    transform: scale(1.5);
+}
+
+.socials i{
+    margin: 0px 10px;
+}
+
+.socials i:hover{
+    transform: scale(1.2);
+}
+
+.footer-info{
+    text-align: center;
+    color: #DFE3EB;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.icons{
+    text-decoration: none;
+    color: white;
+}
+
+.icons:hover{
+    color: var(--var-acent);
+}
