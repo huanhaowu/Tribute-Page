@@ -12,10 +12,6 @@ This is a tribute page dedicated to Bjarke Ingels, an influential and visionary 
 - **Visuals and Media:** The tribute page incorporates visually appealing images and videos of Ingels' iconic projects, providing users with an immersive experience.
 - **External Resources:** Relevant external resources, including articles, videos, and books about Bjarke Ingels and his works, are linked within the page, enabling users to explore further.
 
-<br>
-
-## Contributing
-Contributions to enhance the tribute page and its content are welcome. If you have any suggestions, bug reports, or feature requests, please submit them as issues in this repository. Alternatively, you can fork this repository, make your changes, and submit a pull request.
 
 <br>
 
